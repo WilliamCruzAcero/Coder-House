@@ -7,7 +7,7 @@
     .encabezado{
         width: 100%;
         height: auto;
-        background-color: black;
+        background: linear-gradient(to left,black, rgb(47, 42, 42), rgb(180, 110, 110));
         color: yellow;
     }   
     .encabezado__menu li{
@@ -25,11 +25,15 @@
         width: 100%;
         height: 100%;
     }
+    .encabezado__suscribirse input{
+        background: black;
+        color: yellow;
+    }
     .main{ 
         width: 100%;  
         height: auto;
         font-size: 10px;
-        background: rgb(129, 131, 51);
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
         text-align: center;
         display: block;
        
@@ -73,7 +77,7 @@
     }
     .pie{
         width: 100%;
-        background-color:black;
+        background: linear-gradient(to left,black, rgb(47, 42, 42), rgb(180, 110, 110));
         font-size: 10px;
         
     }
@@ -97,21 +101,24 @@
         width: 100%;
         font: size 10px;
         padding: 15px;
-        background: rgb(129, 131, 51);
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
         text-align: center; 
     }
     .comentario p{
         text-align: left;
         padding: 15px;
     }
-    .comentario__texto textarea {
+    .comentario__texto textarea:focus{
+        padding: 50px;
         background-color: aqua;
+        width: 400px;
+        height: 300px;
     }
     /* como llegar */
     .llegar{
         width: 100%;
         padding: 15px;
-        background: rgb(129, 131, 51);
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
     }   
     .llegar__imagen img{
         padding: 15px;
@@ -123,7 +130,7 @@
     }
     /* manu */
     .platos{
-        background: rgb(129, 131, 51);
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
         color: black;
     }
     .platos h2{
@@ -146,7 +153,7 @@
     }
     .bebidas{
         padding: 15px;
-        background: rgb(129, 131, 51);
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
     }
     .bebidas__titulo{
         font-size: 15px;
@@ -194,33 +201,31 @@
     }
     /* quienes somos */
     .somos{   
-        padding: 15px;
         font-size: 15px;
-        background: rgb(129, 131, 51);
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
     }
     .somos__titulo p{
-        padding: 15px;
         text-align: left;
     }
-    .somos__presentacion{
-        background:rgb(129, 131, 51) ;
+    .somos__presentacion{       
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
         display: block;
     }
-    .presentacion__imagen{
-       text-align: center;
-       padding: 25px;
-    }
     .presentacion__imagen img{
-        width: 250px;
+        width: 100%;
         height: auto;
+        text-align: center;
     }
-    
+    .presentacion__imagen img:hover{
+        width: 100%;
+        height: 100%;
+    }
     /* reservacion */
     .reserva{
         width: 100%;
         height: auto;
         padding: 15px;
-        background: rgb(129, 131, 51);
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
         text-align: center;    
         display: block;
     } 
@@ -232,7 +237,7 @@
     }
     /* suscribirse */
     .registro{
-        background: rgb(129, 131, 51); 
+        background:linear-gradient(rgb(113,122,99),rgb(136,156,105),rgb(122,127,103));
     }
     .registro__titulo h2{
         padding: 10px;
@@ -243,5 +248,10 @@
         margin:  0 100px;
         text-align: left;
         padding: 10px;
+    } 
+    .formulario input:focus{
+        width: 300px;
+        height: 25px;
+        background-color:rgb(216, 210, 210);
     }
-    }
+}
